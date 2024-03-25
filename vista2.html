@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista 2</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <div class="container_left">
+        <h2>Agregar domicilio</h2>
+
+        <div class="data_per">
+            <label for="name">Nombre y Apellido</label>
+            <br>
+            <input class="txtName" id='name' type="text" placeholder="Nombre y Apellido" required autofocus>
+
+            <div class="dir_phone" >
+                <div class="dir">
+                    <label for="dir1">Direccion</label>
+                    <br>
+                    <input class="txtPhone" id='dir1' type="text" placeholder="Direccion" required autofocus>
+                </div>
+                <div class="phone">
+                    <label for="phone">Teléfono</label>
+                    <br>
+                    <input class="txtPhone" id='phone' type="tel" placeholder="Teléfono" required autofocus>
+                </div>
+            </div>
+
+            <label for="refered">Refernecia Opcional</label>
+            <br>
+            <input class="txtName" id='refered' type="text" placeholder="Referencia opcional" required autofocus>
+
+        </div>
+        <br>
+        <div class="button_main">
+            <button id="payment" class="btn_payment" onclick="pay()">Continuar</button>
+        </div>
+
+    </div>
+
+    <!-- ventana derecha-->
+    <div class="container_right">
+        <h3>Resumen de compra</h3>
+        <hr class="divider">
+        <div class="price-container">
+            <div class="price">
+                <h3>producto</h3>
+            </div>
+            <div class="price">
+                <h3>$76.000</h3>
+            </div>
+            <div class="price">
+                <h3>Envio</h3>
+            </div>
+            <div class="price">
+                <h4 style="color: #33802a">Gratis</h4>
+            </div>
+        </div>
+
+        <hr class="divider">
+        <div class="price-container">
+            <div class="price">
+                <h3>Pagas</h3>
+            </div>
+            <div class="price">
+                <h2>$76.000</h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
